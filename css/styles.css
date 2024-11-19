@@ -31,3 +31,36 @@ footer {
     background-color: #333;
     color: #fff;
 }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: linear-gradient(90deg, #2193b0, #6dd5ed);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+}
