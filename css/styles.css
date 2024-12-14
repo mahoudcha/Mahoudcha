@@ -1,50 +1,116 @@
 body {
-    font-family: 'Roboto', sans-serif;
     margin: 0;
-    background-color: #f4f6f8;
-    color: #333;
+    font-family: Arial, sans-serif;
+    display: flex;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #fff;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+.sidebar {
+    width: 250px;
+    background-color: #1e1e1e;
+    color: white;
+    padding: 20px;
+    height: 100vh;
 }
 
 .logo {
-    font-weight: bold;
-    font-size: 24px;
-    color: #007BFF;
+    max-width: 100%;
+    height: auto;
 }
 
-nav ul {
+.balance {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.5em;
+    color: #4caf50;
+}
+
+.sidebar nav ul {
     list-style: none;
-    display: flex;
-    gap: 20px;
-    margin: 0;
     padding: 0;
 }
 
-nav ul li a {
+.sidebar nav ul li {
+    margin: 15px 0;
+}
+
+.sidebar nav ul li a {
+    color: white;
     text-decoration: none;
-    color: #333;
-    font-weight: 500;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
 }
 
-nav ul li a:hover {
-    color: #007BFF;
+.sidebar nav ul li a:hover {
+    background-color: #333;
 }
 
-main {
+.main-content {
+    flex-grow: 1;
     padding: 20px;
+    background-color: #2c2c2c;
+    color: white;
 }
 
-footer {
-    background-color: #fff;
+.load-recommendations, .show-chart, .time-frame {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.load-recommendations:hover, .show-chart:hover, .time-frame:hover {
+    background-color: #45a049;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.card {
+    background-color: #3a3a3a;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.technical-analysis {
+    background-color: #3a3a3a;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.time-frames {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.gauge {
     text-align: center;
+    margin-bottom: 20px;
+}
+
+.targets {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.target {
+    background-color: #4a4a4a;
     padding: 20px;
-    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.stop-loss {
+    text-align: center;
 }
